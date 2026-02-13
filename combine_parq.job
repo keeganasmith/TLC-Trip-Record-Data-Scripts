@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH --job-name=benchmark_ood_automl
+#SBATCH --time=24:0:00 --mem=300G
+#SBATCH --ntasks=1 --nodes=1 --cpus-per-task=192
+#SBATCH --output=out --error=error
+#SBATCH --partition=cpu 
+#SBATCH --exclusive
+
+
+module purge
+cd $SCRATCH/ood_automl/
+cd $SCRATCH
+source modules.sh
+source venv/bin/activate
+
+cd taxi_data
+python3 combine.py
