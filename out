@@ -1,0 +1,68 @@
+Loading: yellow_all.parquet
+Rows: 517,247,428
+Columns:
+VendorID
+tpep_pickup_datetime
+tpep_dropoff_datetime
+passenger_count
+trip_distance
+RatecodeID
+store_and_fwd_flag
+PULocationID
+DOLocationID
+payment_type
+fare_amount
+extra
+mta_tax
+tip_amount
+tolls_amount
+improvement_surcharge
+total_amount
+congestion_surcharge
+airport_fee
+vendor_id
+pickup_datetime
+dropoff_datetime
+pickup_longitude
+pickup_latitude
+rate_code
+dropoff_longitude
+dropoff_latitude
+surcharge
+__index_level_0__
+Parsing datetimes + creating time features...
+Dropping leakage columns: ['fare_amount', 'extra', 'mta_tax', 'tip_amount', 'tolls_amount', 'improvement_surcharge', 'congestion_surcharge', 'airport_fee']
+Cleaning data...
+Final rows: 347,432,430
+Final columns:
+VendorID
+passenger_count
+trip_distance
+RatecodeID
+store_and_fwd_flag
+PULocationID
+DOLocationID
+payment_type
+total_amount
+vendor_id
+pickup_datetime
+dropoff_datetime
+pickup_longitude
+pickup_latitude
+rate_code
+dropoff_longitude
+dropoff_latitude
+surcharge
+__index_level_0__
+pickup_hour
+pickup_dayofweek
+pickup_month
+trip_duration_min
+pickup_datetime_epoch
+pickup_datetime_hour
+pickup_datetime_dow
+dropoff_datetime_epoch
+dropoff_datetime_hour
+dropoff_datetime_dow
+Writing: yellow_all_preprocessed.parquet
+Done.
