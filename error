@@ -1,4 +1,4 @@
-/scratch/user/u.ks124812/TLC-Trip-Record-Data-Scripts/preprocess.py:80: FutureWarning: Series.view is deprecated and will be removed in a future version. Use ``astype`` as an alternative to change the dtype.
-  df[c + "_epoch"] = (df[c].view("int64") // 10**9).astype("Int64")  # nullable
-/scratch/user/u.ks124812/TLC-Trip-Record-Data-Scripts/preprocess.py:80: FutureWarning: Series.view is deprecated and will be removed in a future version. Use ``astype`` as an alternative to change the dtype.
-  df[c + "_epoch"] = (df[c].view("int64") // 10**9).astype("Int64")  # nullable
+/scratch/user/u.ks124812/TLC-Trip-Record-Data-Scripts/preprocess.py:125: FutureWarning: Series.view is deprecated and will be removed in a future version. Use ``astype`` as an alternative to change the dtype.
+  epoch = (df[c].view("int64") // 10**9)
+/scratch/user/u.ks124812/TLC-Trip-Record-Data-Scripts/preprocess.py:125: FutureWarning: Series.view is deprecated and will be removed in a future version. Use ``astype`` as an alternative to change the dtype.
+  epoch = (df[c].view("int64") // 10**9)
